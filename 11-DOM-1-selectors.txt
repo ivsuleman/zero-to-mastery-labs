@@ -1,0 +1,89 @@
+DOM Selectors
+--------------
+getElementsByTagName
+getElementsByClassName
+getElementById
+
+querySelector
+querySelectorAll
+
+getAttribute
+setAttribute
+
+##Changing Styles
+style.{property} //ok
+
+className //best
+classList //best
+
+classList.add
+classList.remove
+classList.toggle
+
+document.createTextNode("");
+
+document.createElement("button");
+button.innerHTML = "Delete";
+li.appendChild(button);
+
+
+##Bonus
+innerHTML //DANGEROUS
+
+parentElement
+children
+
+##It is important to CACHE selectors in variables
+
+
+Keyboard Events
+https://developer.mozilla.org/en-US/docs/Web/Events#Keyboard_events
+
+Mouse Events
+https://developer.mozilla.org/en-US/docs/Web/Events#Mouse_events
+
+
+
+
+
+button.addEventListener("click", function () {
+    var li = document.createElement("li");
+    li.appendChild(document.createTextNode(input.value));
+    ul.appendChild(li);
+})
+
+input.addEventListener("keypress", function (event) {
+    if (input.value.length > 0 && event.keyCode === 13) {
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(input.value));
+        ul.appendChild(li);
+        input.value = "";
+    }
+})
+
+
+
+CALLBACK
+To react to an event you listen for it and supply a function which will be called by the browser when the event occurs. This function is known as a callback.
+
+
+EVENT-DRIVEN
+Events occur whenever something happens on a page based on user interaction. Code is event driven and writing interactive applications in JavaScript is often about waiting for and reacting to events, to alter the behaviour of the browser in some way.
+
+TEXT-NODE 
+Every element has child called textNode.
+
+i.e. 
+li.appendChild(document.createTextNode("test")); 
+// created an li element with text "test".
+
+ul.appendChild(li);
+
+input.value
+//get value from input
+
+event.which
+//gives a description of the event.
+
+keycode
+enter= 13

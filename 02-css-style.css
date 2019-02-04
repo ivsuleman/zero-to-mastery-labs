@@ -1,0 +1,168 @@
+/* SYNTAX
+
+    Selector {
+        property: value;
+    } 
+
+    p {
+        color: red;
+    }
+
+*/
+
+/* COLORS
+    Hex:
+    #277554
+
+    RGB(255=100%, 0=0%):
+    rgb(100, 170, 140)
+
+    RGBA(4th number is opactiy 1=opaque 0=transparent):
+    rgba(100, 170, 140, 0.5)
+*/
+
+/* TEXT
+    color: red;
+
+    text-align:right;
+    text-align:center;
+    text-align:left;
+    
+    text-decoration: underline;
+    text-decoration: line-through;
+    
+    text-transform: uppercase;
+    text-transform: lowercase;
+    
+    line-height: 20px;
+    
+    font-style: italic;
+    
+    font-weight: 100;
+    font-weight: 900;
+    font-weight: bold;
+    
+    font-size: 150%;
+    
+    font-family: Georgia;
+    font-family: "Times New Roman";
+    font-family: "Times New Roman", Gerogia, Arial;
+*/
+
+/* IMAGE
+    background-image: url("http://")
+    background-size: cover;
+*/
+
+/* BORDER
+    border: 5px dashed green;
+    border: 10px solid red;
+*/
+
+/* CURSOR
+    cursor:pointer
+*/
+
+/* LIST
+    list-style: none;           (no bullet point)
+*/
+
+/* DISPLAY
+    display: inline-block;      (on same line)
+*/
+
+/* IMAGE
+    float: left;                (to have images and text wrap aronud them)
+
+    clear: both;                (bypasses the float and sets element after image
+    text-align: center;     
+*/
+
+/* BOX MODEL
+    border: 5px solid red;
+    display: inline-block;
+    padding: 5px 20px 5px 20px; (space inside of border top, right, bottom, left)
+    margin: 0px 20px 0px 20px;  (space outside or border)
+
+    padding: 5px 20px  (space inside of border top/bottom, right/left)
+    margin: 0px 20px   (space outside of border top/bottom, right/left))
+
+    width: 33px; (of content)
+    height: 50px (of content)
+*/
+
+/* MEASUREMENTS
+    px pixels
+    em                  (relative to containing element size)
+    rem                 (relative to root element size)
+*/
+
+
+
+/* EXAMPLES
+
+    .class  - can be assigned to multiple elements
+    #id     - id can only be used for a single element.
+    *       - all elements (usually at top of CSS), specific selectors will override.
+
+    element             - a single element
+    element, element    - both elements.
+    element element     - every 2nd element that is nested inside 1st elements
+    element > element   - every 2nd element where the parent is 1st element
+    element + element   - every 2nd element that are placed immediately after 1st elements
+
+    :hover  - style changes when mouse is hovered over element
+    button:hover {
+    }
+
+    :last-child     - selects the last element
+    :first-child    - selects the first element
+    !important      - overrides all styling
+
+*/
+
+
+/*
+    Animate CSS to add image and text animation.
+*/
+
+/*
+    Creative Tim for template based sites.
+*/
+
+p {
+    text-align: right;
+}
+
+body {
+    background-image: url(02-css-pic-unsplash.jpg);
+    background-size: cover;
+}
+
+h2 + p {
+    color:#CDF1E2;
+    text-align: center;
+    border: 5px solid RGBA(100, 170, 140, 0.5);
+    cursor: pointer;
+}
+
+p {
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+.webtext {
+    border: 5px dashed green;
+}
+
+.active {
+    color: red;
+}
+
+#div1 {
+    background-color: RGBA(0,0,255,0.4);
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Form Page</h1>
+    <div></div>
+    <span></span>
+    <!-- comment -->
+    <form method="GET" action="action.php">
+
+        First Name:
+        <input type="text" placeholder="first name" name="firstname"><br>
+
+        Last Name:
+        <input type="text" placeholder="last name" name="lastname"><br>
+
+        Email:
+        <input type="email" placeholder="email" name="email" required><br>
+
+        Password:
+        <input type="password" placeholder="password" name="password" minlength="5"><br>
+
+        Birthday:
+        <input type="date" name="birthday"><br>
+
+        Gender:
+        <br>
+        <input type="radio" name="gender" value="male">Male<br>
+        <input type="radio" name="gender" value="female">Female<br>
+        <input type="radio" name="gender" value="other">Other<br>
+
+        Pets:
+        <br>
+        <input type="checkbox" name="cat">Cat<br>
+        <input type="checkbox" name="dog">Dog<br>
+
+        Cars:
+        <select name="cars">
+            <option value="volvo" name="volvo">Volvo</option>
+            <option value="bmw" name="bmw">BMW</option>
+            <option value="audi" name="audi">Audi</option>
+        </select><br>
+
+        <input type="submit" value="register">
+        <input type="reset">
+
+    </form>
+</body>
+
+</html>
+
+<!-- POST
+    http://127.0.0.1:5600/03-form.html
+    ?
+    firstname=irfa
+    &lastname=sulean
+    &email=isulean%40gmail.com
+    &password=password
+    &birthday=2019-01-01
+    &gender=on
+    &cat=on
+
+    http://127.0.0.1:5600/action.php
+    ?
+    firstname=FIRSTNAME
+    &lastname=LASTNAME
+    &email=EMAIL%40GMAIL.COM
+    &password=PASSWORDFAKE
+    &birthday=2019-01-01
+    &gender=male
+    &cat=on
+    &dog=on
+    &cars=audi
+-->
